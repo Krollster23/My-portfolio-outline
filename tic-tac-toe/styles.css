@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightblue: #8BC5C6
+}
+/*Header*/
+h1 {
+    color: wheat;
+    text-decoration: underline;
+}
