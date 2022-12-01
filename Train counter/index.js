@@ -1,27 +1,26 @@
-//document.getElementById("count-el").innerText = 0;
-
+document.getElementById("count-el").innerText = 0;
 let saveEl = document.getElementById("save-el");
 let countEl = document.getElementById("count-el");
-let num = document.getElementById("incremented").value;
-let count = parseFloat(incremented);
-
+let verify = document.getElementById("pushput").value;
+let inputVal = increment.value;
+let count = 0;
 
  function increase() {
-    if (count >= 250) {
+    if (countEl.textContent >= 250) {
         alert('The train is full.')
     } else {
-        countEl.textContent = count 
-        
+        console.log(verify);
+        count += parseInt(inputVal);
+        countEl.textContent = count;        
     }
  }
-
- let numLess = document.getElementById("count-el");
 
 function decrease() {
     if(count <= 0) {
         alert("You can't do that!");
     } else {
-        numLess.textContent = -count;
+        count -= parseInt(inputVal);
+        countEl.textContent = count;
     }
  }
 

@@ -8,13 +8,12 @@
         <h1>People Boarding Train</h1>
         <br>
             <h2 id="count-el">0</h2>            
-            <!-- <input type="range" id="incremented" value="0" min="0" max="250" oninput="this.nextElementSibling.value=this.value">
-            <output id="pushput">0</output><br> -->
+            <input type="range" id="increment" name="increment" value="1" min="1" max="250" style="width: 250px;" oninput="this.nextElementSibling.innerText=this.value">
+            <output id="pushput" name="pushput">0</output><br>
             <button id="increment-btn" onclick="increase()">INCREASE</button>
             <button id="minus-btn" onclick="decrease()">DECREASE</button>
             <br>
-            <br>
-            <button id="save-btn" onclick="save()">SAVE</button>
+            <button id="save-btn" style="margin-top: 20px;" onclick="save()">SAVE</button>
             <p id="save-el">PREVIOUS ENTRIES:</p>
         <script src="index.js"></script>
     </body>
